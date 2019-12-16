@@ -116,3 +116,12 @@ if (appData.savings == true){
 }
 
 checkSavings();
+
+function chooseOptExpenses(){
+for(let i = 1; i <= 3; i++){
+let questionOptExpenses = prompt("Статья необязательных расходов?");
+appData.optionalExpenses[i] = questionOptExpenses;
+console.log(appData.optionalExpenses);
+}
+}
+chooseOptExpenses();
